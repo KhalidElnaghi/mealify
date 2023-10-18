@@ -1,0 +1,176 @@
+/* Container Media */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 10px;
+  }
+}
+
+/*==========> Header <=============*/
+@media screen and (min-width: 1200px) {
+  header {
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  header .container > * {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header .container .header-content {
+    margin-top: 30px;
+  }
+  header .main-btn {
+    --border-radius: 40px;
+  }
+  @media screen and (max-width: 400px) {
+    header .buttons-group {
+      flex-direction: column;
+    }
+  }
+}
+
+/*==========> Nav Bar <=============*/
+@media screen and (max-width: 1200px) {
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    transform: translateX(100%);
+    position: absolute;
+    background-color: white;
+    flex-direction: column;
+    width: 350px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    gap: 0;
+  }
+  nav ul li {
+    padding: 15px 10px;
+  }
+  nav ul li.close-icon {
+    display: block;
+    width: fit-content;
+    padding-inline: 20px;
+    align-self: flex-end;
+  }
+  nav div.mode {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  nav ul li a:hover {
+    color: var(--light-gray-color);
+  }
+}
+
+/*==========> Chefs <=============*/
+@media screen and (max-width: 992px) {
+  .chefs-cards .card {
+    width: calc((100% - var(--gap)) / 2);
+  }
+}
+@media screen and (max-width: 768px) {
+  .chefs-cards .card {
+    width: 100%;
+  }
+}
+
+/*==========> Gallery <=============*/
+@media screen and (max-width: 992px) {
+  .gallery-dishes {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-dishes {
+    column-count: 1;
+  }
+  .gallery-dishes .dish .layer h3 {
+    font-size: 24px;
+    padding: 10px;
+  }
+}
+
+/* ==========> Contact <============= */
+@media screen and (max-width: 992px) {
+  .contact .contact-ways div p {
+    font-size: 14px;
+  }
+  .contact form .input-group input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact .contact-ways > div {
+    width: 100%;
+  }
+}
+
+/* ==========> Footer <============= */
+@media screen and (max-width: 1200px) {
+  footer .about,
+  .contact-details {
+    width: calc(calc(100% - var(--gap)) / 2);
+  }
+  footer .contact-details {
+    order: 1;
+  }
+  footer .subscribtion {
+    order: 2;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .about,
+  .contact-details,
+  .subscribtion {
+    width: 100%;
+  }
+  footer .contact-details {
+    order: 3;
+  }
+}
